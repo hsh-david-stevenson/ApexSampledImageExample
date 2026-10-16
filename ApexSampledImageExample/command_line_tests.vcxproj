@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TargetName>command_line_tests</TargetName>
+    <IntDir>$(Platform)\$(Configuration)\OptionTests\</IntDir>
+  </PropertyGroup>
+  <Import Project="ApexSampledImageExample.vcxproj" />
+  <PropertyGroup>
+    <ProjectGuid>{A090FC95-69AC-446C-BC7B-98150DB19B15}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClCompile Remove="Main.cpp" />
+    <ClCompile Include="command_line_tests.cpp" />
+  </ItemGroup>
+</Project>
